@@ -1,0 +1,42 @@
+export const products = [
+    {
+        id: 1,
+        title: 'Catan',
+        price: '15,000',
+        stock: 10,
+        category: 'Estrategia',
+        img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133575/proyecto%20Reactjs/catan.jpg',
+    },
+    {
+        id: 2,
+        title: 'Secret Hitler',
+        price: '13,000',
+        stock: 10,
+        category: 'Estrategia',
+        img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/c_scale,h_800,w_800/v1673137021/proyecto%20Reactjs/secretHitler_he2pdu.jpg',
+    },
+    {
+        id: 3,
+        title: 'Everdell',
+        price: '28,500',
+        stock: 10,
+        category: 'Estrategia',
+        img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133575/proyecto%20Reactjs/everdell.jpg',
+    },
+    {
+        id: 4,
+        title: 'Terra Mystica',
+        price: '25,300',
+        stock: 10,
+        category: 'Estrategia',
+        img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133575/proyecto%20Reactjs/terra-mystica.jpg',
+    },
+    {
+        id: 5,
+        title: 'King of Tokyo',
+        price: '12,800',
+        stock: 10,
+        category: 'Estrategia',
+        img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133575/proyecto%20Reactjs/kingOfTokyo.jpg',
+    },
+];

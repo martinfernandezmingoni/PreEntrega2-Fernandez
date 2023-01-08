@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { CartWidget } from '../CartWidget/CartWidget';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 function ColorSchemesExample() {
   const logo = "https://i.postimg.cc/9M6GtS7G/logo.png";
@@ -11,15 +12,20 @@ function ColorSchemesExample() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <img className="logoNav" src={logo} alt="logo" />
-          <Navbar.Brand href="#home">Gaia Games Store</Navbar.Brand>
+          <Link  to={'/'}>
+            <img className="logoNav" src={logo} alt="logo"/>
+          </Link>
           <Nav className="me-auto navi">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="./CartWidget/CartWidget.js">Store</Nav.Link>
-            <Nav.Link href="#pricing">Carrito</Nav.Link>
+            <ul className='links'>
+              <li><Link to={'/'}>Home</Link></li>
+              <li><Link to={'/Store'}>Store</Link></li>
+              <li><Link to={'/Top100'}>Top 100</Link></li>
+            </ul>
           </Nav>
         </Container>
-        <CartWidget />
+        <Link to={'/Carrito'}>
+          <CartWidget />
+        </Link>
       </Navbar>
     </>
         );
