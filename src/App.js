@@ -4,7 +4,7 @@ import ColorSchemesExample from "./Components/NavBar/NavBar.jsx";
 import  ItemListContainer from "./Components/ItemListContainer/ItemListContainer.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
-import Home from "./Components/Home/Home";
+import Nos from "./Components/Nosotros/Nosotros";
 const App = () => {
   return (
     
@@ -12,15 +12,17 @@ const App = () => {
     <BrowserRouter>
       <ColorSchemesExample />
       <Routes>
-      <Route 
+
+        <Route 
           path='/'
           element={
-            <Home />}
-        />
-        <Route 
-          path='/store'
-          element={
             <ItemListContainer saludo="Bienvenido a Gaia Games Store, la mejor LudoTeca"/>
+          }
+        />
+      <Route 
+          path='/nosotros'
+          element={
+            <Nos />
           }
         />
         <Route 

@@ -25,6 +25,7 @@ export const products = [
         stock: 10,
         category: 'Estrategia',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133575/proyecto%20Reactjs/everdell.jpg',
+        img2: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133576/proyecto%20Reactjs/everdell2.jpg'
     },
     {
         id: 4,

@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css'
 
-export default function Home() {
+export default function Nos() {
     return(
         <>
         <div className="top">

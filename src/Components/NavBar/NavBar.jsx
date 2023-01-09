@@ -19,8 +19,7 @@ function ColorSchemesExample() {
           <Nav className="me-auto navi">
             <ul className='links'>
               <li><NavLink to={'/'}>Home</NavLink></li>
-              <li><NavLink to={'/store'}>Store</NavLink></li>
-              <li><NavLink to={'/Top100'}>Top 100</NavLink></li>
+              <li><NavLink to={'/nosotros'}>Nosotros</NavLink></li>
               <li><NavDropdown title="Categorias" id="navbarScrollingDropdown">
               <Link className='dropdown' to={'/categoria/1-jugador'}>1 Jugador</Link>
               <Link className='dropdown' to={'/categoria/2-jugadores'}>2 Jugadores</Link>
