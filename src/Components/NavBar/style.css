@@ -18,11 +18,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    align-items: center;
     list-style-type: none;
 }
 
-.links li a{
+.links li a, #navbarScrollingDropdown {
     width: auto;
     align-items: center;
     color: white;
@@ -31,4 +31,9 @@
     font-weight:500;
     font-family: sans-serif;
     text-decoration: none;
+}
+
+.dropdown {
+    color: black!important;
+    display: inline-block;   
 }

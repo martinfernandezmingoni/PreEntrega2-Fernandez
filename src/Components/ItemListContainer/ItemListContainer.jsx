@@ -11,7 +11,7 @@ const ItemListContainer = ({ saludo }) => {
             return new Promise((res, rej) => {
                 setTimeout(() => {
                     res(products);
-                }, 2000);
+                }, );
             });
         };
         getProducts()
