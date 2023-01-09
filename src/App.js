@@ -24,7 +24,13 @@ const App = () => {
           }
         />
         <Route 
-        path='/detail'
+          path='/categoria/:categoryName'
+          element={
+            <ItemListContainer saludo="Bienvenido a Gaia Games Store, la mejor LudoTeca"/>
+          }
+        />
+        <Route 
+        path='/detail/:idNumb'
         element={<ItemDetailContainer />}
         />
         

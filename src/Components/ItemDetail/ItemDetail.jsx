@@ -1,20 +1,22 @@
 import React from 'react';
 import './style.css';
 
-const ItemDetail = () => {
+const ItemDetail = ({item}) => {
+    const discount = item.price - (item.price * item.off) / 100;
+
+    const cuotas = discount / 12;
     return (
         <div className="container-page1 container-detail1">
             <img
-                src="https://res.cloudinary.com/ericwaje/image/upload/v1619372705/camisa2_tmojul.jpg"
+                src={item.img}
                 alt="detail"
             />
-
             <article>
-                <h2>Nombre del producto</h2>
-                <h4>20% OFF</h4>
+                <h2>{item.title}</h2>
+                <h4>{item.off}% OFF</h4>
                 <section>
-                    <h3>$ 2000.-</h3>
-                    <h5>$ 3000.-</h5>
+                    <h3>$ {discount}.-</h3>
+                    <h5>$ {item.price}.-</h5>
                 </section>
                 <span className="info-span">
                     Todos los precios están expresados en Pesos
@@ -22,7 +24,7 @@ const ItemDetail = () => {
                 <hr />
                 <h3 className="cuotas">
                     Hasta <strong>12</strong> cuotas sin interes de
-                    <strong> $166</strong>
+                    <strong> $ {cuotas}</strong>
                 </h3>
                 <button className="metodos-pagos">
                     Conocé todos los métodos de pagos
