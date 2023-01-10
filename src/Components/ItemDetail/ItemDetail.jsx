@@ -24,7 +24,7 @@ const ItemDetail = ({item}) => {
                 <hr />
                 <h3 className="cuotas">
                     Hasta <strong>12</strong> cuotas sin interes de
-                    <strong> $ {cuotas}</strong>
+                    <strong> $ {cuotas.toFixed(2)}</strong>
                 </h3>
                 <button className="metodos-pagos">
                     Conocé todos los métodos de pagos
