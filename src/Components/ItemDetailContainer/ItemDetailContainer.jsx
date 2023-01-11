@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
     useEffect(()=>{
         const getProduct = ()=> {
             return new Promise ((res, rej)=> {
-                const productFind = products.find ((prod)=> `${prod.id}` === idNumb)
+                const productFind = products.find ((prod)=> prod.id === parseInt(idNumb))
 
                 const prodDetail = idNumb ? productFind : products
                 setTimeout(()=>{
