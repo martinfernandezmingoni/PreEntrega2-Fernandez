@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import Counter from '../Counter/Counter';
 
 const ItemDetail = ({item}) => {
     const discount = item.price - (item.price * item.off) / 100;
@@ -32,7 +33,7 @@ const ItemDetail = ({item}) => {
                     Conocé todos los métodos de pagos
                 </button>
                 <hr />
-                
+                <Counter stock={item.stock} />
             </article>
         </div>
     );

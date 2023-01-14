@@ -4,7 +4,7 @@ export const products = [
         title: 'Catan',
         price: 15000,
         off: 15,
-        stock: 10,
+        stock: 14,
         category: 'Estrategia',
         desc: 'Colonizar, comerciar y construir son las claves del éxito. Coloca poblados y carreteras con habilidad, negocia con tus amigos para conseguir materias primas y haz un uso inteligente del ladrón para bloquear terrenos. Igual que en el juego de mesa, el pensamiento estratégico es crucial para vencer a los demás jugadores.',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133575/proyecto%20Reactjs/catan.jpg',
