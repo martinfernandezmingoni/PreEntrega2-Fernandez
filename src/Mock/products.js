@@ -6,6 +6,7 @@ export const products = [
         off: 15,
         stock: 10,
         category: 'Estrategia',
+        desc: 'Colonizar, comerciar y construir son las claves del éxito. Coloca poblados y carreteras con habilidad, negocia con tus amigos para conseguir materias primas y haz un uso inteligente del ladrón para bloquear terrenos. Igual que en el juego de mesa, el pensamiento estratégico es crucial para vencer a los demás jugadores.',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133575/proyecto%20Reactjs/catan.jpg',
     },
     {
@@ -15,6 +16,7 @@ export const products = [
         off: 15,
         stock: 10,
         category: 'Estrategia',
+        desc: 'Secret Hitler es un ju<ego de deducción social para 5-10 personas sobre cómo encontrar y detener a Hitler y una toma de poder fascista. Los jugadores se dividen en secreto en dos equipos: los liberales, que tienen la mayoría, y los fascistas, que están ocultos para todos menos para ellos. Si los liberales pueden aprender a confiar unos en otros, tendrán suficientes votos para controlar las elecciones y salvar el día. Pero los fascistas dirán lo que sea necesario para ser elegidos, avanzar en su agenda y ganar el juego.',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/c_scale,h_800,w_800/v1673137021/proyecto%20Reactjs/secretHitler_he2pdu.jpg',
     },
     {
@@ -24,6 +26,7 @@ export const products = [
         off: 15,
         stock: 10,
         category: 'Estrategia',
+        desc: 'Everdell es una adaptación del galardonado juego de mesa de Tabletop Tycoon y un fantástico juego de construcción de ciudades que combina la colocación de trabajadores con el juego estratégico de cartas para crear una nueva civilización. Reúne recursos para construir Estructuras fantasiosas y reclutar a Criaturas coloridas para desarrollar tu ciudad. Cada carta de tu ciudad te otorga puntos; ¡la ciudad que consiga más puntos después de cuatro estaciones gana!',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133575/proyecto%20Reactjs/everdell.jpg',
         img2: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133576/proyecto%20Reactjs/everdell2.jpg'
     },
@@ -34,6 +37,7 @@ export const products = [
         off: 15,
         stock: 10,
         category: 'Estrategia',
+        desc: 'En la tierra de Terra Mystica habitan 14 pueblos diferentes en siete paisajes, y cada grupo está ligado a su propio entorno natal, por lo que para desarrollarse y crecer, deben terraformar los paisajes vecinos en sus entornos natales en competencia con los otros grupos. Terra Mystica es un juego lleno de información, sin suerte, que premia la planificación estratégica. Cada jugador gobierna uno de los 14 grupos. Con sutileza y habilidad, el jugador debe intentar gobernar un área tan grande como sea posible y desarrollar las habilidades de ese grupo. También hay cuatro cultos religiosos en los que puedes progresar. Para hacer todo eso, cada grupo tiene habilidades y destrezas especiales.',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133575/proyecto%20Reactjs/terra-mystica.jpg',
     },
     {
@@ -43,6 +47,7 @@ export const products = [
         off: 15,
         stock: 10,
         category: 'Estrategia',
+        desc:'King of Tokyo es un juego en el que no debes dejar que nada te detenga. Elige tu mejor estrategia y lanza los dados, derrota a todos tus enemigos, gana puntos de fama y conviértete en el único e indiscutible gran rey de Tokyo.',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1673133575/proyecto%20Reactjs/kingOfTokyo.jpg',
     },
     {
@@ -52,6 +57,7 @@ export const products = [
         off: 15,
         stock: 8,
         category: 'Cartas',
+        desc: '¡No es un juego para toros! Tenes 10 cartas para jugar, de manera inteligente, en una de las cuatro filas. Pero ¡atención! en cada fila sólo entran cinco cartas. Así que, si colocas la sexta carta de una fila, tendrás que llevarte las cinco que haya, con todos sus toros (puntos negativos).',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/c_scale,w_800/v1673283477/proyecto%20Reactjs/Toma6_b0mdm2.jpg'
     },
     {
@@ -61,6 +67,7 @@ export const products = [
         off: 15,
         stock: 8,
         category: 'Cartas',
+        desc: 'El objetivo de UNO es deshacerse de todas las cartas que se “roban” inicialmente, diciendo la palabra uno cuando queda la última carta en la mano; si el jugador no dice uno cuando tiene solo una carta será penalizado con 2 cartas. El ganador del juego UNO será el primero que llegue a los 500 puntos, los puntos se irán sumando a medida que se terminen las partidas de juego. El que logre ganar una mano, sumará todos los puntos de las cartas que se han quedado los jugadores rivales.',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/c_scale,w_800/v1673283770/proyecto%20Reactjs/uno_yqsvih.jpg'
     },
     {
@@ -70,6 +77,7 @@ export const products = [
         off: 15,
         stock: 8,
         category: '1-jugador',
+        desc:'En los Adventure Games, cada grupo de jugadores se enfrenta a una aventura inmersiva en la cual deberán explorar una serie de escenarios consecutivos para resolver el misterio planteado. Se despiertan en una húmeda mazmorra. Parece imposible encontrar la salida, sobre todo porque ninguno de ustedes puede recordar lo que los trajo aquí. Como en un juego de aventuras para PC, tendréis que explorar diferentes lugares, combinar objetos, encontrar pistas y hablar con la gente. Poco a poco, comenzarán a entender la trama e idear un plan para escapar… ¡no escatimen esfuerzos!',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/c_scale,w_800/v1673284630/proyecto%20Reactjs/mazmorra_ptgwnr.jpg'
     },
     {
@@ -79,6 +87,7 @@ export const products = [
         off: 15,
         stock: 8,
         category: '2-jugadores',
+        desc: 'Somos un equipo de exploración y tenemos que salvar al mayor número de dinosaurios de una nueva Extinción. Para poder hacerlo, tendremos que llevarlos a diferentes Entornos Seguros, consiguiendo que haya el equilibrio alimentario adecuado para cada uno. El juego de mesa ¡Extinción! es, sin duda, uno de los juegos de cartas más recomendables del año. Creado e ilustrado fantásticamente por David GJ (ilustrador de ¡Virus!), con una mecánica de mercado que te obliga a pensar y planificar, pero manteniendo un sistema de juego ágil y rápido.',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/c_scale,h_800,w_800/v1673284780/proyecto%20Reactjs/extincion_rmytda.jpg'
     }
 ];

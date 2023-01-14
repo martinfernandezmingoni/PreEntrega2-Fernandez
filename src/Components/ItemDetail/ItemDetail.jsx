@@ -7,12 +7,12 @@ const ItemDetail = ({item}) => {
     const cuotas = discount / 12;
     return (
         <div className="container-page1 container-detail1">
-            <img
+            <img className='imgDetail'
                 src={item.img}
                 alt="detail"
             />
             <article>
-                <h2>{item.title}</h2>
+                <h1>{item.title}</h1>
                 <h4>{item.off}% OFF</h4>
                 <section>
                     <h3>$ {discount}.-</h3>
@@ -21,6 +21,8 @@ const ItemDetail = ({item}) => {
                 <span className="info-span">
                     Todos los precios están expresados en Pesos
                 </span>
+                <hr />
+                    <p className='desc'>{item.desc}</p>
                 <hr />
                 <h3 className="cuotas">
                     Hasta <strong>12</strong> cuotas sin interes de
