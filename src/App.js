@@ -5,10 +5,14 @@ import  ItemListContainer from "./Components/ItemListContainer/ItemListContainer
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
 import Nos from "./Components/Nosotros/Nosotros";
+import CustomProvider from "./Components/Context/CutomProvider";
+
 const App = () => {
   return (
     
    <div>
+    <CustomProvider>
+
     <BrowserRouter>
       <ColorSchemesExample />
       <Routes>
@@ -39,9 +43,7 @@ const App = () => {
       </Routes>
     
       </BrowserRouter>
-
-        
-
+    </CustomProvider>
     </div>
 
   );
