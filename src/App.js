@@ -5,45 +5,50 @@ import  ItemListContainer from "./Components/ItemListContainer/ItemListContainer
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
 import Nos from "./Components/Nosotros/Nosotros";
-import CustomProvider from "./Components/Context/CutomProvider";
+import CartProvider from "./Components/Context/CutomProvider";
+import Cart from "./Components/Cart/Cart";
 
 const App = () => {
   return (
     
    <div>
-    <CustomProvider>
+    <CartProvider>
+      <BrowserRouter>
+        <ColorSchemesExample />
+        <Routes>
 
-    <BrowserRouter>
-      <ColorSchemesExample />
-      <Routes>
+          <Route 
+            path='/'
+            element={
+              <ItemListContainer saludo="Bienvenido a Gaia Games Store, la mejor LudoTeca"/>
+            }
+          />
+        <Route 
+            path='/nosotros'
+            element={
+              <Nos />
+            }
+          />
+          <Route 
+            path='/categoria/:categoryName'
+            element={
+              <ItemListContainer saludo="Bienvenido a Gaia Games Store, la mejor LudoTeca"/>
+            }
+          />
+          <Route 
+            path='/detail/:idNumb'
+            element={<ItemDetailContainer />}
+          />
 
-        <Route 
-          path='/'
-          element={
-            <ItemListContainer saludo="Bienvenido a Gaia Games Store, la mejor LudoTeca"/>
-          }
-        />
-      <Route 
-          path='/nosotros'
-          element={
-            <Nos />
-          }
-        />
-        <Route 
-          path='/categoria/:categoryName'
-          element={
-            <ItemListContainer saludo="Bienvenido a Gaia Games Store, la mejor LudoTeca"/>
-          }
-        />
-        <Route 
-        path='/detail/:idNumb'
-        element={<ItemDetailContainer />}
-        />
-        
-      </Routes>
-    
+          <Route 
+          path='/cart'
+          element={<Cart />} 
+          />
+          
+        </Routes>
+      
       </BrowserRouter>
-    </CustomProvider>
+    </CartProvider>
     </div>
 
   );

@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
 import './style.css';
 import Counter from '../Counter/Counter';
+import { contexto } from '../Context/CutomProvider'; 
 
 const ItemDetail = ({item}) => {
     const discount = item.price - (item.price * item.off) / 100;
+
+    const [confirm, setConfirm] = useState(false)
+    const {addProduct} = useContext(contexto)
+    const [cantidadLocal, setCantidadLocal] = useState('')
+
+    const handleAdd = (cantidad) => {
+        setCantidadLocal(cantidad)
+        setConfirm(true)
+    }
+
+    const getProduct = () => {
+        addProduct(item, cantidadLocal)
+    }
 
     const cuotas = discount / 12;
     return (
@@ -29,11 +43,12 @@ const ItemDetail = ({item}) => {
                     Hasta <strong>12</strong> cuotas sin interes de
                     <strong> $ {cuotas.toFixed(2)}</strong>
                 </h3>
-                <button className="metodos-pagos">
+                {/* <button className="metodos-pagos">
                     Conocé todos los métodos de pagos
-                </button>
+                </button> */}
                 <hr />
-                <Counter stock={item.stock} />
+                <Counter stock={item.stock} handleAdd={handleAdd}/>
+                {confirm && <button onClick={getProduct}>Agregar al Carrito</button>}
             </article>
         </div>
     );
