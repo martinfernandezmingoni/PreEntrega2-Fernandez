@@ -63,7 +63,7 @@ export const products = [
     {
         id:7,
         title: 'Uno',
-        price: 3500,
+        price: 1000,
         off: 15,
         stock: 8,
         category: 'Cartas',
@@ -89,5 +89,25 @@ export const products = [
         category: '2-jugadores',
         desc: 'Somos un equipo de exploración y tenemos que salvar al mayor número de dinosaurios de una nueva Extinción. Para poder hacerlo, tendremos que llevarlos a diferentes Entornos Seguros, consiguiendo que haya el equilibrio alimentario adecuado para cada uno. El juego de mesa ¡Extinción! es, sin duda, uno de los juegos de cartas más recomendables del año. Creado e ilustrado fantásticamente por David GJ (ilustrador de ¡Virus!), con una mecánica de mercado que te obliga a pensar y planificar, pero manteniendo un sistema de juego ágil y rápido.',
         img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/c_scale,h_800,w_800/v1673284780/proyecto%20Reactjs/extincion_rmytda.jpg'
+    },
+    {
+        id:10,
+        title: 'Robin Hood',
+        price: 35100,
+        off: 10,
+        stock: 12,
+        category: 'Familiares',
+        desc: 'Las aventuras de Robin Hood es un juego de 1 a 4 personas, en 9 sesiones de juegos de unos 60min de duracion. A medio camino entre los clasicos libres de la serie "Elige tu aventura". Es un juegoo cooperativo sin manual que va evolucionando segun las decisiones que toman los jugadores',
+        img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/c_scale,w_800/v1674070556/proyecto%20Reactjs/robinhood_spirwb.jpg'
+    },
+    {
+        id:11,
+        title: 'Carcasone',
+        price: 12000,
+        off: 10,
+        stock: 8,
+        category: 'Familiares',
+        desc:'Carcassonne es un juego de colocación de fichas en el que los jugadores dibujan y colocan una ficha con un trozo de paisaje del sur de Francia. La ficha puede incluir una ciudad, una carretera, un claustro, un prado o alguna combinación de los mismos, y debe colocarse junto a las fichas que ya se han jugado, de manera que las ciudades estén conectadas con ciudades, caminos con caminos, etcétera. Después de colocar una loseta, el jugador puede decidir colocar uno de sus meeples en una de las áreas de la misma: en la ciudad como un caballero, en el camino como un ladrón, en un claustro como un monje o en el césped como un granjero. Cuando esa área está completa, ese meeple anota puntos para su propietario.',
+        img: 'https://res.cloudinary.com/dmthbi3ny/image/upload/c_scale,w_800/v1674071069/proyecto%20Reactjs/carcasone_fkkrg9.jpg'
     }
 ];

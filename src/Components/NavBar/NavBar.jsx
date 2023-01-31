@@ -25,6 +25,7 @@ function ColorSchemesExample() {
               <Link className='dropdown' to={'/categoria/2-jugadores'}>2 Jugadores</Link>
               <Link className='dropdown' to={'/categoria/Estrategia'}>Estrategia</Link>
               <Link className='dropdown' to={'/categoria/Cartas'}>Cartas</Link>
+              <Link className='dropdown' to={'/categoria/Familiares'}>Familiares</Link>
               
             </NavDropdown>
             </li>

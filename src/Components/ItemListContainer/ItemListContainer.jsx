@@ -3,37 +3,39 @@ import { products } from '../../Mock/products';
 import ItemList from '../ItemList/ItemList';
 import './style.css';
 import { useParams } from 'react-router-dom';
+import { productsCollection } from '../../firebaseConfig';
+import { getDocs, query, where } from "firebase/firestore"
 
 const ItemListContainer = ({ saludo }) => {
     const [items, setItems] = useState([]);
+    const [load, setLoad] = useState(true)
 
-    const {categoryName} = useParams()
+    const {categoryName} = useParams();
 
     useEffect(() => {
         const getProducts = () => {
-            return new Promise((res, rej) => {
-                const productsFilter = products.filter(
-                    (prod)=>prod.category === categoryName);
-
-                const prodList = categoryName ? productsFilter : products
-                setTimeout(() => {
-                    res(prodList);
-                }, 500);
-            });
+            const ask = getDocs(productsCollection)
+            const filter = query(productsCollection, where("category", "==", categoryName))
+            const askCategory = getDocs(filter)
+            askCategory
+            .then((result) => {
+                const productsList  = result.docs.map((doc) =>{
+                    return {... doc.data(), id: doc.id}
+                })
+                setItems(productsList)
+                setLoad(false)
+            })
+            .catch((error) =>{
+                console.log(error)
+            })
         };
         getProducts()
-            .then((res) => {
-                setItems(res);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }, [categoryName]);
+    }, [categoryName])
 
     return (
         <div className="container1 container-page1">
             <h2>{saludo}</h2>
-            <ItemList items={items} />
+            <>{!load ? <ItemList items={items} /> : <p style={{fontWeight:"bold", fontSize:"25px", color:"red"}}>Cargando...</p>}</>
         </div>
     );
 };
