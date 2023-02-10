@@ -25,6 +25,7 @@ const Counter = ({stock, handleAdd}) => {
                 <p className='qantity'>{cantidad}</p>
                 <button disabled={cantidad === stock} onClick={sumar}>+</button>
                 <button className='add-to-cart' onClick={handleConfirm}>Confirmar Productos</button>
+                
             </div>
             
         </div>

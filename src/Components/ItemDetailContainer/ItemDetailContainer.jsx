@@ -4,6 +4,7 @@ import { products } from '../../Mock/products';
 import { useParams } from 'react-router-dom';
 import { getDoc, doc } from 'firebase/firestore';
 import { productsCollection } from '../../firebaseConfig';
+import { toast } from 'react-toastify';
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState ({});
@@ -13,7 +14,7 @@ const ItemDetailContainer = () => {
 
     useEffect(()=>{
         const getProduct = () => {
-            const docReference = doc(productsCollection,"77kl5tVBdxAuzzSEHQl6" )
+            const docReference = doc(productsCollection, idNumb )
             const ask = getDoc(docReference)
             ask
             .then((result) => {
@@ -22,7 +23,7 @@ const ItemDetailContainer = () => {
                 setLoad(false)
             })
             .catch((error) => {
-                console.log(error)
+                toast.error("Error al cargar la web")
             })
         }
 

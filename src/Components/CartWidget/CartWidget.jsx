@@ -1,20 +1,36 @@
 import './style.css';
-import { Link } from 'react-router-dom';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { contexto } from '../Context/CutomProvider';
+import { Offcanvas, Stack } from 'react-bootstrap';
+import Cart from '../Cart/Cart';
 
-export function CartWidget (){
-    const icono = 'https://cdn.icon-icons.com/icons2/2621/PNG/512/shopping_cart_icon_156961.png' ;
-    const {cantidad} = useContext (contexto)
+
+
+
+export default function CartWidget (){
+    const icono = 'https://res.cloudinary.com/dmthbi3ny/image/upload/v1675636151/proyecto%20Reactjs/carrito_gfykkr.png' ;
+    const {cantidad} = useContext (contexto);
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false)
 
     return (
         <>
-        <Link to={'/cart'}>
-            <div className='trolley'>
+        
+            <div onClick={handleShow} className='trolley'>
                 <img className='icon' src={icono} alt="Carrito" />
                 <span className="number">{cantidad}</span>
             </div>
-        </Link>
+        
+        <Offcanvas show={show} onHide={handleClose} placement="end">
+            <Offcanvas.Header closeButton>
+                <Offcanvas.Title>Carrito</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+                <Cart />
+            </Offcanvas.Body>
+        </Offcanvas>
+        
         </>
     );
 }
